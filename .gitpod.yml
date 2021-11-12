@@ -1,0 +1,9 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: |
+      python -m pip install --upgrade pip
+      python -m pip install -U pytest
+      python -m pip install -U pytest-xdist
+      python manage.py migrate
+    command: echo 'start script'
+      pytest -v -s -n=2
