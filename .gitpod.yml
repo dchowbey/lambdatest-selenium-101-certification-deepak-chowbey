@@ -2,6 +2,7 @@
 tasks:
   - init: |
       python -m pip install --upgrade pip
+      python -m pip install -U selenium
       python -m pip install -U pytest
       python -m pip install -U pytest-xdist
       python manage.py migrate
